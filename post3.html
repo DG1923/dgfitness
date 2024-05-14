@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
+    <script>
+      window.onUsersnapLoad = function(api) {
+        api.init();
+      };
+      var script = document.createElement('script');
+      script.defer = 1;
+      script.src = 'https://widget.usersnap.com/global/load/ff9f7f5d-d6eb-4854-9802-1014c44fce1a?onload=onUsersnapLoad';
+      document.getElementsByTagName('head')[0].appendChild(script);
+    </script>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
